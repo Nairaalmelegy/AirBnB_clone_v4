@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 @app.teardown_appcontext
 def close_db(error):
-        """ Remove SQLAlchemy session """
-            storage.close()
+    """ Remove SQLAlchemy session """
+    storage.close()
 
 
 @app.route('/1-hbnb/', strict_slashes=False)
